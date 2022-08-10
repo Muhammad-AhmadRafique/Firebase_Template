@@ -15,6 +15,11 @@
 		DE68C78B289CEB2E004167CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE68C789289CEB2E004167CE /* LaunchScreen.storyboard */; };
 		DE68C793289CEBE1004167CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE68C792289CEBE1004167CE /* GoogleService-Info.plist */; };
 		DEADFB81289CFD720023E7ED /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADFB80289CFD720023E7ED /* UIViewController+Extension.swift */; };
+		DEADFB84289D29500023E7ED /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEADFB83289D29500023E7ED /* Signup.storyboard */; };
+		DEADFB86289D2A2E0023E7ED /* ModeSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADFB85289D2A2E0023E7ED /* ModeSelection.swift */; };
+		DEADFB88289D2A420023E7ED /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADFB87289D2A420023E7ED /* Constants.swift */; };
+		DEADFB8B289D2B590023E7ED /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADFB8A289D2B590023E7ED /* MainViewController.swift */; };
+		DEADFB8E289D34AB0023E7ED /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADFB8D289D34AB0023E7ED /* FirebaseManager.swift */; };
 		EFCF1DC7648FDC23DF798CC0 /* Pods_Firebase_Template_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CFEF7BBA9A4664A67A8F512 /* Pods_Firebase_Template_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +37,11 @@
 		DE68C78C289CEB2E004167CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE68C792289CEBE1004167CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DEADFB80289CFD720023E7ED /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		DEADFB83289D29500023E7ED /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
+		DEADFB85289D2A2E0023E7ED /* ModeSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeSelection.swift; sourceTree = "<group>"; };
+		DEADFB87289D2A420023E7ED /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DEADFB8A289D2B590023E7ED /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DEADFB8D289D34AB0023E7ED /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,15 +85,18 @@
 		DE68C77D289CEB2A004167CE /* Firebase_Template_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				DEADFB8C289D34990023E7ED /* Managers */,
+				DEADFB89289D2B3F0023E7ED /* Controllers */,
+				DEADFB82289D29410023E7ED /* Storyboards */,
 				DEADFB7E289CFD570023E7ED /* Extensions */,
 				DE68C792289CEBE1004167CE /* GoogleService-Info.plist */,
 				DE68C77E289CEB2A004167CE /* AppDelegate.swift */,
 				DE68C780289CEB2A004167CE /* SceneDelegate.swift */,
-				DE68C782289CEB2A004167CE /* ViewController.swift */,
-				DE68C784289CEB2A004167CE /* Main.storyboard */,
 				DE68C787289CEB2E004167CE /* Assets.xcassets */,
 				DE68C789289CEB2E004167CE /* LaunchScreen.storyboard */,
 				DE68C78C289CEB2E004167CE /* Info.plist */,
+				DEADFB85289D2A2E0023E7ED /* ModeSelection.swift */,
+				DEADFB87289D2A420023E7ED /* Constants.swift */,
 			);
 			path = Firebase_Template_iOS;
 			sourceTree = "<group>";
@@ -94,6 +107,32 @@
 				DEADFB80289CFD720023E7ED /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DEADFB82289D29410023E7ED /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DEADFB83289D29500023E7ED /* Signup.storyboard */,
+				DE68C784289CEB2A004167CE /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DEADFB89289D2B3F0023E7ED /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DE68C782289CEB2A004167CE /* ViewController.swift */,
+				DEADFB8A289D2B590023E7ED /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DEADFB8C289D34990023E7ED /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				DEADFB8D289D34AB0023E7ED /* FirebaseManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		E066FA107699D39D677FE33E /* Pods */ = {
@@ -168,6 +207,7 @@
 				DE68C78B289CEB2E004167CE /* LaunchScreen.storyboard in Resources */,
 				DE68C793289CEBE1004167CE /* GoogleService-Info.plist in Resources */,
 				DE68C788289CEB2E004167CE /* Assets.xcassets in Resources */,
+				DEADFB84289D29500023E7ED /* Signup.storyboard in Resources */,
 				DE68C786289CEB2A004167CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,10 +261,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEADFB8B289D2B590023E7ED /* MainViewController.swift in Sources */,
 				DEADFB81289CFD720023E7ED /* UIViewController+Extension.swift in Sources */,
 				DE68C783289CEB2A004167CE /* ViewController.swift in Sources */,
+				DEADFB86289D2A2E0023E7ED /* ModeSelection.swift in Sources */,
+				DEADFB8E289D34AB0023E7ED /* FirebaseManager.swift in Sources */,
 				DE68C77F289CEB2A004167CE /* AppDelegate.swift in Sources */,
 				DE68C781289CEB2A004167CE /* SceneDelegate.swift in Sources */,
+				DEADFB88289D2A420023E7ED /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

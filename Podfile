@@ -10,8 +10,9 @@ target 'Firebase_Template_iOS' do
 
 # Add the pods for any other Firebase products you want to use in your app
 # For example, to use Firebase Authentication and Cloud Firestore
+
+pod 'MBProgressHUD'
 pod 'FirebaseAuth'
 pod 'FirebaseFirestore'
-pod 'MBProgressHUD'
 
 end
